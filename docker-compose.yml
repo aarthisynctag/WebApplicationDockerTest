@@ -1,0 +1,22 @@
+version: '3.4'
+
+services:
+  webapplicationdockertest:
+    image: ${DOCKER_REGISTRY-}webapplicationdockertest
+    build:
+      context: .\WebApplicationDockerTest
+      dockerfile: Dockerfile
+
+  webapplicationdockertest2:
+    image: ${DOCKER_REGISTRY-}webapplicationdockertest2
+    build:
+      context: .\WebApplicationDockerTest2
+      dockerfile: Dockerfile
+
+
+  webapplicationdockertest3:
+    image: ${DOCKER_REGISTRY-}webapplicationdockertest3
+    build:
+      context: .\WebApplicationDockerTest3
+      dockerfile: Dockerfile
+

@@ -1,0 +1,18 @@
+version: '3.4'
+
+services:
+  webapplicationdockertest:
+    ports:
+      - "80"
+  webapplicationdockertest2:
+    ports:
+      - "80"
+  webapplicationdockertest3:
+    ports:
+      - "80"
+networks:
+  default:
+    external:
+      name: nat
+
+
